@@ -1,6 +1,6 @@
 # GutSync — SIBO & Gut Health Food Assistant
 
-[![GitHub](https://img.shields.io/badge/GitHub-shipblueprint%2Fgut--sync-blue?logo=github)](https://github.com/shipblueprint/gut-sync)
+[![GitHub](https://img.shields.io/badge/GitHub-shipblueprint%2Fgut--sync-blue)](https://github.com/shipblueprint/gut-sync)
 
 A **Flutter** cross-platform application that helps people manage gut health conditions — **SIBO** (Small Intestinal Bacterial Overgrowth), **SSRD** (Starch- and Sucrose-Reduced Diet), **Bile Reflux**, and **6-Food Elimination / Low-Residue Diet** — by providing a comprehensive food database categorized as **allowed (green)**, **caution (yellow)**, or **avoid (red)** for each diet.
 
