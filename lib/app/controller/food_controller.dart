@@ -1,10 +1,10 @@
 import 'package:get/get.dart';
-import 'package:gut_sync/app/data/food_repository.dart';
-import 'package:gut_sync/app/model/food_category.dart';
-import 'package:gut_sync/app/model/food_item.dart';
-import 'package:gut_sync/app/model/food_status.dart';
-import 'package:gut_sync/app/model/diet_profile.dart';
-import 'package:gut_sync/helpers/services/supabase_service.dart';
+import 'package:gutsynced/app/data/food_repository.dart';
+import 'package:gutsynced/app/model/food_category.dart';
+import 'package:gutsynced/app/model/food_item.dart';
+import 'package:gutsynced/app/model/food_status.dart';
+import 'package:gutsynced/app/model/diet_profile.dart';
+import 'package:gutsynced/helpers/services/supabase_service.dart';
 
 class FoodController extends GetxController {
   final FoodRepository _repository = FoodRepository();

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:gut_sync/helpers/services/storage/local_storage.dart';
-import 'package:gut_sync/helpers/services/supabase_service.dart';
-import 'package:gut_sync/helpers/services/app_config.dart';
-import 'package:gut_sync/helpers/theme/app_theme.dart';
-import 'package:gut_sync/helpers/theme/theme_customizer.dart';
-import 'package:gut_sync/route/route_method.dart';
-import 'package:gut_sync/route/routes.dart';
+import 'package:gutsynced/helpers/services/storage/local_storage.dart';
+import 'package:gutsynced/helpers/services/supabase_service.dart';
+import 'package:gutsynced/helpers/services/app_config.dart';
+import 'package:gutsynced/helpers/theme/app_theme.dart';
+import 'package:gutsynced/helpers/theme/theme_customizer.dart';
+import 'package:gutsynced/route/route_method.dart';
+import 'package:gutsynced/route/routes.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -15,16 +15,16 @@ Future<void> main() async {
   await ThemeCustomizer.init();
   await AppConfig().load();
   await SupabaseService().init();
-  runApp(const GutSyncApp());
+  runApp(const GutSyncedApp());
 }
 
-class GutSyncApp extends StatelessWidget {
-  const GutSyncApp({super.key});
+class GutSyncedApp extends StatelessWidget {
+  const GutSyncedApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: 'GutSync',
+      title: 'GutSynced',
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,

@@ -1,10 +1,10 @@
-import 'package:gut_sync/helpers/theme/app_theme.dart';
-import 'package:gut_sync/helpers/widgets/my_flex_item.dart';
-import 'package:gut_sync/helpers/widgets/my_list_extension.dart';
-import 'package:gut_sync/helpers/widgets/my_responsive.dart';
-import 'package:gut_sync/helpers/widgets/my_screen_media.dart';
-import 'package:gut_sync/helpers/widgets/my_screen_media_type.dart';
-import 'package:gut_sync/helpers/widgets/my_spacing.dart';
+import 'package:gutsynced/helpers/theme/app_theme.dart';
+import 'package:gutsynced/helpers/widgets/my_flex_item.dart';
+import 'package:gutsynced/helpers/widgets/my_list_extension.dart';
+import 'package:gutsynced/helpers/widgets/my_responsive.dart';
+import 'package:gutsynced/helpers/widgets/my_screen_media.dart';
+import 'package:gutsynced/helpers/widgets/my_screen_media_type.dart';
+import 'package:gutsynced/helpers/widgets/my_spacing.dart';
 import 'package:flutter/material.dart';
 
 class MyFlex extends StatelessWidget {

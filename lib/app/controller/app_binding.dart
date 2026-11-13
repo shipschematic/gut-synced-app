@@ -1,6 +1,6 @@
 import 'package:get/get.dart';
-import 'package:gut_sync/app/controller/food_controller.dart';
-import 'package:gut_sync/app/controller/auth_controller.dart';
+import 'package:gutsynced/app/controller/food_controller.dart';
+import 'package:gutsynced/app/controller/auth_controller.dart';
 
 class AppBinding extends Bindings {
   @override

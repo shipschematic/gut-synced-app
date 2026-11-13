@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lucide/flutter_lucide.dart';
 import 'package:get/get.dart';
-import 'package:gut_sync/app/controller/food_controller.dart';
-import 'package:gut_sync/app/controller/auth_controller.dart';
-import 'package:gut_sync/helpers/services/translations_service.dart';
-import 'package:gut_sync/helpers/theme/theme_customizer.dart';
+import 'package:gutsynced/app/controller/food_controller.dart';
+import 'package:gutsynced/app/controller/auth_controller.dart';
+import 'package:gutsynced/helpers/services/translations_service.dart';
+import 'package:gutsynced/helpers/theme/theme_customizer.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lucide/flutter_lucide.dart';
-import 'package:gut_sync/view/apps/home/home_screen.dart';
-import 'package:gut_sync/view/apps/favorites/favorites_screen.dart';
-import 'package:gut_sync/view/apps/settings/settings_screen.dart';
+import 'package:gutsynced/view/apps/home/home_screen.dart';
+import 'package:gutsynced/view/apps/favorites/favorites_screen.dart';
+import 'package:gutsynced/view/apps/settings/settings_screen.dart';
 
 class AppLayout extends StatefulWidget {
   const AppLayout({super.key});

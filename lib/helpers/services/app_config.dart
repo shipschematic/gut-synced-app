@@ -9,7 +9,7 @@ class AppConfig {
 
   String supabaseUrl = '';
   String supabaseAnonKey = '';
-  String appName = 'GutSync';
+  String appName = 'GutSynced';
 
   bool get hasSupabaseConfig => supabaseUrl.isNotEmpty && supabaseAnonKey.isNotEmpty;
 
@@ -19,7 +19,7 @@ class AppConfig {
       final data = json.decode(jsonStr) as Map<String, dynamic>;
       supabaseUrl = data['supabase_url'] as String? ?? '';
       supabaseAnonKey = data['supabase_anon_key'] as String? ?? '';
-      appName = data['app_name'] as String? ?? 'GutSync';
+      appName = data['app_name'] as String? ?? 'GutSynced';
     } catch (e) {
       debugPrint('AppConfig: Failed to load env.json — $e');
     }

@@ -1,6 +1,6 @@
-import 'package:gut_sync/helpers/theme/app_theme.dart';
-import 'package:gut_sync/helpers/widgets/my_constant.dart';
-import 'package:gut_sync/helpers/widgets/my_spacing.dart';
+import 'package:gutsynced/helpers/theme/app_theme.dart';
+import 'package:gutsynced/helpers/widgets/my_constant.dart';
+import 'package:gutsynced/helpers/widgets/my_spacing.dart';
 import 'package:flutter/material.dart';
 
 class MyContainer extends StatelessWidget {

@@ -1,4 +1,4 @@
-import 'package:gut_sync/helpers/services/logger.dart';
+import 'package:gutsynced/helpers/services/logger.dart';
 
 class AppError extends Error {
   final String message;

@@ -1,5 +1,5 @@
-import 'package:gut_sync/helpers/widgets/my_display_type.dart';
-import 'package:gut_sync/helpers/widgets/my_screen_media_type.dart';
+import 'package:gutsynced/helpers/widgets/my_display_type.dart';
+import 'package:gutsynced/helpers/widgets/my_screen_media_type.dart';
 
 class MyScreenMedia {
   static int flexColumns = 12;

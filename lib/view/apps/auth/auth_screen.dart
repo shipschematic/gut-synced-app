@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lucide/flutter_lucide.dart';
 import 'package:get/get.dart';
-import 'package:gut_sync/app/controller/auth_controller.dart';
+import 'package:gutsynced/app/controller/auth_controller.dart';
 
 class AuthScreen extends StatelessWidget {
   const AuthScreen({super.key});
@@ -138,7 +138,7 @@ class AuthScreen extends StatelessWidget {
           child: const Icon(LucideIcons.utensils_crossed, color: Colors.white, size: 40),
         ),
         const SizedBox(height: 24),
-        const Text('GutSync', style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white)),
+        const Text('GutSynced', style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white)),
         const SizedBox(height: 8),
         const Text('Your SIBO diet companion',
           style: TextStyle(fontSize: 14, fontWeight: FontWeight.w300, color: Colors.grey)),

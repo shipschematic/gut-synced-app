@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_generic_function_type_aliases
 
-import 'package:gut_sync/helpers/theme/app_theme.dart';
+import 'package:gutsynced/helpers/theme/app_theme.dart';
 import 'package:flutter/material.dart';
 
 enum MyTextType {

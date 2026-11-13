@@ -1,10 +1,10 @@
 import 'package:get/get.dart';
-import 'package:gut_sync/app/controller/app_binding.dart';
-import 'package:gut_sync/route/route_method.dart';
-import 'package:gut_sync/view/app_layout/app_layout.dart';
-import 'package:gut_sync/view/apps/splash/splash_screen.dart';
-import 'package:gut_sync/view/apps/auth/auth_screen.dart';
-import 'package:gut_sync/view/apps/detail/detail_screen.dart';
+import 'package:gutsynced/app/controller/app_binding.dart';
+import 'package:gutsynced/route/route_method.dart';
+import 'package:gutsynced/view/app_layout/app_layout.dart';
+import 'package:gutsynced/view/apps/splash/splash_screen.dart';
+import 'package:gutsynced/view/apps/auth/auth_screen.dart';
+import 'package:gutsynced/view/apps/detail/detail_screen.dart';
 
 List<GetPage> getPageRoute() => [
       GetPage(

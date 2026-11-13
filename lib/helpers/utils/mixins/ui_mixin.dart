@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:gut_sync/helpers/theme/admin_theme.dart';
-import 'package:gut_sync/helpers/theme/app_theme.dart';
-import 'package:gut_sync/helpers/widgets/my_dashed_divider.dart';
-import 'package:gut_sync/helpers/widgets/my_navigation_mixin.dart';
-import 'package:gut_sync/helpers/widgets/my_spacing.dart';
+import 'package:gutsynced/helpers/theme/admin_theme.dart';
+import 'package:gutsynced/helpers/theme/app_theme.dart';
+import 'package:gutsynced/helpers/widgets/my_dashed_divider.dart';
+import 'package:gutsynced/helpers/widgets/my_navigation_mixin.dart';
+import 'package:gutsynced/helpers/widgets/my_spacing.dart';
 
 mixin UIMixin {
   LeftBarTheme get leftBarTheme => AdminTheme.theme.leftBarTheme;

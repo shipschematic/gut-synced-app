@@ -1,0 +1,13 @@
+{
+  "projects": {
+    "default": "gutsynced"
+  },
+  "targets": {
+    "gutsynced": {
+      "hosting": {
+        "app": ["gutsynced-app"],
+        "landing": ["gutsynced"]
+      }
+    }
+  }
+}

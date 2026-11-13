@@ -1,4 +1,4 @@
-import 'package:gut_sync/helpers/extensions/date_time_extension.dart';
+import 'package:gutsynced/helpers/extensions/date_time_extension.dart';
 
 class Utils {
   static getDateStringFromDateTime(DateTime dateTime,

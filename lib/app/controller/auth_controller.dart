@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
-import 'package:gut_sync/helpers/services/supabase_service.dart';
-import 'package:gut_sync/helpers/services/app_config.dart';
-import 'package:gut_sync/helpers/services/error_handler.dart';
+import 'package:gutsynced/helpers/services/supabase_service.dart';
+import 'package:gutsynced/helpers/services/app_config.dart';
+import 'package:gutsynced/helpers/services/error_handler.dart';
 
 enum AuthStatus { uninitialized, authenticated, unauthenticated, loading }
 

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lucide/flutter_lucide.dart';
 import 'package:get/get.dart';
-import 'package:gut_sync/app/controller/auth_controller.dart';
-import 'package:gut_sync/helpers/services/app_config.dart';
+import 'package:gutsynced/app/controller/auth_controller.dart';
+import 'package:gutsynced/helpers/services/app_config.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -84,7 +84,7 @@ class _SplashScreenState extends State<SplashScreen>
                 child: const Icon(LucideIcons.utensils_crossed, color: Colors.white, size: 48),
               ),
               const SizedBox(height: 24),
-              const Text('GutSync', style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white)),
+              const Text('GutSynced', style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold, color: Colors.white)),
               const SizedBox(height: 8),
               const Text('SIBO Diet Assistant',
                 style: TextStyle(fontSize: 14, fontWeight: FontWeight.w300, color: Colors.grey)),

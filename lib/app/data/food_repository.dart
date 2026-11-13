@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:gut_sync/app/model/food_category.dart';
-import 'package:gut_sync/app/model/food_item.dart';
-import 'package:gut_sync/app/model/food_status.dart';
-import 'package:gut_sync/app/model/diet_profile.dart';
+import 'package:gutsynced/app/model/food_category.dart';
+import 'package:gutsynced/app/model/food_item.dart';
+import 'package:gutsynced/app/model/food_status.dart';
+import 'package:gutsynced/app/model/diet_profile.dart';
 
 class FoodRepository {
   List<FoodCategory> _categories = [];

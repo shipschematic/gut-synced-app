@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gut_sync/helpers/theme/theme_customizer.dart';
+import 'package:gutsynced/helpers/theme/theme_customizer.dart';
 
 enum LeftBarThemeType { light, dark }
 

@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:gut_sync/app/controller/food_controller.dart';
+import 'package:gutsynced/app/controller/food_controller.dart';
 
 class TranslationsService extends GetxService {
   final Map<String, Map<String, dynamic>> _translations = {

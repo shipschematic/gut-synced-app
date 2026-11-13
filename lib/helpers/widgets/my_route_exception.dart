@@ -1,1 +1,1 @@
-import 'package:gut_sync/helpers/widgets/my_base_exception.dart';class RouteException extends BaseException {  final String message;  RouteException(this.message);  @override  String toString() {    return 'RouteException{message: $message}';  }}
+import 'package:gutsynced/helpers/widgets/my_base_exception.dart';class RouteException extends BaseException {  final String message;  RouteException(this.message);  @override  String toString() {    return 'RouteException{message: $message}';  }}

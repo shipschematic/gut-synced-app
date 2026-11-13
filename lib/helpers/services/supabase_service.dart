@@ -1,7 +1,7 @@
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:dio/dio.dart';
-import 'package:gut_sync/helpers/services/logger.dart';
-import 'package:gut_sync/helpers/services/app_config.dart';
+import 'package:gutsynced/helpers/services/logger.dart';
+import 'package:gutsynced/helpers/services/app_config.dart';
 
 class SupabaseService {
   static final SupabaseService _instance = SupabaseService._internal();

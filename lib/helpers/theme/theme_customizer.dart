@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
-import 'package:gut_sync/helpers/services/json_decoder.dart';
-import 'package:gut_sync/helpers/theme/admin_theme.dart';
-import 'package:gut_sync/helpers/theme/app_theme.dart';
+import 'package:gutsynced/helpers/services/json_decoder.dart';
+import 'package:gutsynced/helpers/theme/admin_theme.dart';
+import 'package:gutsynced/helpers/theme/app_theme.dart';
 
 typedef ThemeChangeCallback = void Function(
     ThemeCustomizer oldVal, ThemeCustomizer newVal);

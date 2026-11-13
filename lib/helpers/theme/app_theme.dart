@@ -1,13 +1,13 @@
 import 'dart:io';
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:gut_sync/helpers/theme/admin_theme.dart';
-import 'package:gut_sync/helpers/theme/theme_customizer.dart';
-import 'package:gut_sync/helpers/widgets/my.dart';
-import 'package:gut_sync/helpers/widgets/my_breadcrumb_item.dart';
-import 'package:gut_sync/helpers/widgets/my_constant.dart';
-import 'package:gut_sync/helpers/widgets/my_screen_media.dart';
-import 'package:gut_sync/helpers/widgets/my_text_style.dart';
+import 'package:gutsynced/helpers/theme/admin_theme.dart';
+import 'package:gutsynced/helpers/theme/theme_customizer.dart';
+import 'package:gutsynced/helpers/widgets/my.dart';
+import 'package:gutsynced/helpers/widgets/my_breadcrumb_item.dart';
+import 'package:gutsynced/helpers/widgets/my_constant.dart';
+import 'package:gutsynced/helpers/widgets/my_screen_media.dart';
+import 'package:gutsynced/helpers/widgets/my_text_style.dart';
 
 ThemeData get theme => AppTheme.theme;
 

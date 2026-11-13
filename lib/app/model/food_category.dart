@@ -1,4 +1,4 @@
-import 'package:gut_sync/app/model/food_item.dart';
+import 'package:gutsynced/app/model/food_item.dart';
 
 class FoodCategory {
   final String name;

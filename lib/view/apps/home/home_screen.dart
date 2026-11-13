@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_lucide/flutter_lucide.dart';
 import 'package:get/get.dart';
-import 'package:gut_sync/app/controller/food_controller.dart';
-import 'package:gut_sync/app/controller/auth_controller.dart';
-import 'package:gut_sync/app/model/food_category.dart';
-import 'package:gut_sync/app/model/food_item.dart';
-import 'package:gut_sync/app/model/food_status.dart';
-import 'package:gut_sync/helpers/services/translations_service.dart';
+import 'package:gutsynced/app/controller/food_controller.dart';
+import 'package:gutsynced/app/controller/auth_controller.dart';
+import 'package:gutsynced/app/model/food_category.dart';
+import 'package:gutsynced/app/model/food_item.dart';
+import 'package:gutsynced/app/model/food_status.dart';
+import 'package:gutsynced/helpers/services/translations_service.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -69,7 +69,7 @@ class HomeScreen extends StatelessWidget {
             child: const Icon(LucideIcons.utensils_crossed, color: Colors.white, size: 16),
           ),
           const SizedBox(width: 10),
-          const Text('GutSync'),
+          const Text('GutSynced'),
         ],
       ),
       actions: [

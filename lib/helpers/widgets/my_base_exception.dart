@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:gut_sync/helpers/widgets/my_exception.dart';
+import 'package:gutsynced/helpers/widgets/my_exception.dart';
 
 class BaseException extends MyException {
   StackTrace? stackTrace;

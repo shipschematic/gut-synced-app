@@ -1,4 +1,4 @@
-import 'package:gut_sync/app/model/food_status.dart';
+import 'package:gutsynced/app/model/food_status.dart';
 
 class FoodItem {
   final String name;

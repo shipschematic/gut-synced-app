@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gut_sync/helpers/services/storage/local_storage.dart';
-import 'package:gut_sync/helpers/theme/app_theme.dart';
-import 'package:gut_sync/helpers/theme/theme_customizer.dart';
-import 'package:gut_sync/helpers/widgets/my.dart';
+import 'package:gutsynced/helpers/services/storage/local_storage.dart';
+import 'package:gutsynced/helpers/theme/app_theme.dart';
+import 'package:gutsynced/helpers/theme/theme_customizer.dart';
+import 'package:gutsynced/helpers/widgets/my.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AppNotifier extends ChangeNotifier {

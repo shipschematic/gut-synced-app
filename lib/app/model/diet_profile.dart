@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gut_sync/app/model/food_status.dart';
+import 'package:gutsynced/app/model/food_status.dart';
 
 class DietProfile {
   final String id;

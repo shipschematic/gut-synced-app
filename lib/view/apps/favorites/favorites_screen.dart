@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_lucide/flutter_lucide.dart';
 import 'package:get/get.dart';
-import 'package:gut_sync/app/controller/food_controller.dart';
-import 'package:gut_sync/app/model/food_item.dart';
-import 'package:gut_sync/helpers/services/translations_service.dart';
+import 'package:gutsynced/app/controller/food_controller.dart';
+import 'package:gutsynced/app/model/food_item.dart';
+import 'package:gutsynced/helpers/services/translations_service.dart';
 
 class FavoritesScreen extends StatelessWidget {
   const FavoritesScreen({super.key});

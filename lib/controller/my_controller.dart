@@ -1,4 +1,4 @@
-import 'package:gut_sync/helpers/theme/theme_customizer.dart';
+import 'package:gutsynced/helpers/theme/theme_customizer.dart';
 import 'package:get/get_state_manager/get_state_manager.dart';
 
 abstract class MyController extends GetxController {

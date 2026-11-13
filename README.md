@@ -1,8 +1,14 @@
-# GutSync — SIBO & Gut Health Food Assistant
+# GutSynced — SIBO & Gut Health Food Assistant
 
-[![GitHub](https://img.shields.io/badge/GitHub-shipblueprint%2Fgut--sync-blue)](https://github.com/shipblueprint/gut-sync)
+[![GitHub](https://img.shields.io/badge/GitHub-shipblueprint%2Fgut--synced--app-blue)](https://github.com/shipblueprint/gut-synced-app)
+[![Build](https://github.com/shipblueprint/gut-synced-app/actions/workflows/build.yml/badge.svg)](https://github.com/shipblueprint/gut-synced-app/actions/workflows/build.yml)
 
 A **Flutter** cross-platform application that helps people manage gut health conditions — **SIBO** (Small Intestinal Bacterial Overgrowth), **SSRD** (Starch- and Sucrose-Reduced Diet), **Bile Reflux**, and **6-Food Elimination / Low-Residue Diet** — by providing a comprehensive food database categorized as **allowed (green)**, **caution (yellow)**, or **avoid (red)** for each diet.
+
+## Live App
+
+- **Web app:** https://gutsynced-app.web.app
+- **Landing page:** https://gutsynced.web.app *(coming soon)*
 
 ---
 
@@ -13,16 +19,16 @@ A **Flutter** cross-platform application that helps people manage gut health con
   - **SSRD Diet** — Starch- and sucrose-reduced diet
   - **Bile Reflux Diet** — Low-fat, low-acid foods
   - **6FED-LR Diet** — Six-food elimination & low-residue diet for EoE and GI healing
-- 🔍 **Food Lookup** — Browse or search hundreds of foods categorized by name and diet compatibility.
+- 🔍 **Food Lookup** — Browse or search hundreds of foods by name and diet compatibility.
 - ⚖️ **Three-Way Status** — Each food is tagged with a traffic-light system:
   - 🟢 **Green** — Allowed / Well tolerated
   - 🟡 **Yellow** — Caution / Limited amounts
   - 🔴 **Red** — Avoid / Not tolerated
 - ⭐ **Favorites** — Save frequently used foods for quick access.
 - 🌐 **Multi-Language** — Supports English, Arabic, Spanish, French, and Hindi.
-- 🌗 **Dark & Light Themes** — Follows system theme or manual toggle.
+- 🌗 **Dark & Light Themes** — Follows the system theme or a manual toggle.
 - 🔐 **Authentication** — Optional Supabase-backed accounts for syncing preferences.
-- 📱 **Cross-Platform** — Built with Flutter, runs on Android, iOS, Web, Windows, macOS, and Linux.
+- 📱 **Cross-Platform** — Built with Flutter and runs on Android, iOS, Web, Windows, macOS, and Linux.
 
 ---
 
@@ -36,7 +42,7 @@ A **Flutter** cross-platform application that helps people manage gut health con
 
 ### Mobile (Android / iOS)
 
-1. Download the latest APK from the [Releases](https://github.com/shipblueprint/gut-sync/releases) page (Android).
+1. Download the latest APK from the [Releases](https://github.com/shipblueprint/gut-synced-app/releases) page (Android).
 2. Or build from source (see [Development](#development) below).
 
 ### Desktop (Windows / macOS / Linux)
@@ -45,7 +51,8 @@ Build from source using Flutter desktop support.
 
 ### Web
 
-Visit the hosted version (if available) or build with:
+Visit the hosted app at https://gutsynced-app.web.app or build it locally with:
+
 ```bash
 flutter build web
 ```
@@ -54,8 +61,8 @@ flutter build web
 
 ## Project Structure
 
-```
-gut_sync/
+```text
+gutsynced/
 ├── lib/
 │   ├── main.dart                    # App entry point
 │   ├── app_constant.dart            # Constants & version info
@@ -77,16 +84,15 @@ gut_sync/
 │   │   ├── extensions/              # Dart extension methods
 │   │   ├── services/                # Core services
 │   │   │   ├── app_config.dart      # App configuration
-│   │   │   ├── auth_service.dart    # Supabase auth
 │   │   │   ├── error_handler.dart   # Error handling
 │   │   │   ├── json_decoder.dart    # JSON utilities
 │   │   │   ├── localizations/       # i18n (5 languages)
 │   │   │   ├── logger.dart          # Logging
 │   │   │   ├── navigation_services.dart
 │   │   │   ├── storage/             # Local storage
-│   │   │   ├── supabase_service.dart# Supabase client
+│   │   │   ├── supabase_service.dart # Supabase client
 │   │   │   └── translations_service.dart
-│   │   ├── theme/                   # Themming (dark/light)
+│   │   ├── theme/                   # Theming (dark/light)
 │   │   ├── utils/                   # Utilities & mixins
 │   │   └── widgets/                 # Reusable UI components
 │   ├── route/                       # GoRouter routing
@@ -116,6 +122,7 @@ gut_sync/
 ├── macos/
 ├── linux/
 ├── test/
+├── firebase.json
 ├── pubspec.yaml
 └── README.md
 ```
@@ -139,18 +146,18 @@ gut_sync/
 |--------|-------|---------|
 | 🟢 Green | `#4ADE80` | Allowed — safe to eat |
 | 🟡 Yellow | `#FBBF24` | Caution — limited amounts or individual tolerance |
-| 🔴 Red   | `#F87171` | Avoid — not recommended |
+| 🔴 Red | `#F87171` | Avoid — not recommended |
 
 ---
 
 ## Usage
 
-1. **Select your diet** — Choose from SIBO, SSRD, Bile Reflux, or 6FED-LR on the home screen.
+1. **Select your diet** — Choose SIBO, SSRD, Bile Reflux, or 6FED-LR on the home screen.
 2. **Browse categories** — Foods are grouped by category (vegetables, fruits, grains, proteins, etc.).
 3. **Check status** — Each item shows a green/yellow/red indicator.
 4. **Search** — Use the search bar to quickly find a specific food.
 5. **Favorite** — Tap the star icon to save foods for quick reference.
-6. **View details** — Tap a food item to see its status, category, and any notes.
+6. **View details** — Tap a food item to see status, category, and any notes.
 7. **Settings** — Change theme, language, or manage your account.
 
 ---
@@ -158,6 +165,7 @@ gut_sync/
 ## Development
 
 ### Prerequisites
+
 - **Flutter SDK** ^3.5.2
 - **Dart SDK** ^3.5.2
 - An IDE (VS Code, Android Studio, or IntelliJ)
@@ -166,8 +174,8 @@ gut_sync/
 
 ```bash
 # Clone the repository
-git clone https://github.com/shipblueprint/gut-sync.git
-cd gut-sync/app
+git clone https://github.com/shipblueprint/gut-synced-app.git
+cd gut-synced-app
 
 # Install dependencies
 flutter pub get
@@ -201,6 +209,20 @@ flutter build macos
 flutter build linux
 ```
 
+### CI Builds
+
+GitHub Actions builds every target on each push to `master`, pull request, or manual run. Download artifacts from the workflow run:
+
+| Target | Artifact |
+|--------|----------|
+| Android | `gutsynced-android-apk` (`app-release.apk`) |
+| iOS | `gutsynced-ios-unsigned` (unsigned `Runner.app`) |
+| macOS | `gutsynced-macos` (app zip) |
+| Windows | `gutsynced-windows` (zip) |
+| Linux | `gutsynced-linux-x64` (tar.gz) |
+
+iOS and macOS artifacts are unsigned. Signing is required before device or store distribution.
+
 ### Key Dependencies
 
 | Package | Purpose |
@@ -213,6 +235,32 @@ flutter build linux
 | `google_fonts` | Custom typography |
 | `flutter_lucide` | Icon set |
 | `intl` | Internationalization |
+
+---
+
+## Deployment
+
+The project uses Firebase Hosting with two sites under the `gutsynced` Firebase project:
+
+| Target | Site | Folder |
+|--------|------|--------|
+| `app` | `gutsynced-app` | `build/web` |
+| `landing` | `gutsynced` | `public/landing` |
+
+```bash
+# Build the Flutter web app
+flutter build web --release
+
+# Deploy the Flutter app
+firebase deploy --only hosting:app
+
+# Deploy the landing page
+firebase deploy --only hosting:landing
+```
+
+Before the first web deploy, add `gutsynced-app.web.app` (and any custom app domain) to **Firebase Console → Authentication → Settings → Authorized domains**.
+
+The app uses Supabase for authentication, so Firebase is only required for Hosting. If you later add the Firebase SDK, run `flutterfire configure` to generate `lib/firebase_options.dart`.
 
 ---
 
@@ -231,10 +279,11 @@ The data structure includes food names, categories, status (green/yellow/red), a
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome!  
-Feel free to check the [issues page](https://github.com/shipblueprint/gut-sync/issues).
+Contributions, issues, and feature requests are welcome!
+Feel free to check the [issues page](https://github.com/shipblueprint/gut-synced-app/issues).
 
 Ways to contribute:
+
 - 🥦 Add or update food data entries
 - 🌐 Improve translations
 - 🐛 Report bugs or suggest features

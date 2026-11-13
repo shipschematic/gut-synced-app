@@ -1,5 +1,5 @@
-name: gut_sync
-description: "GutSync — a SIBO-specific food categorization and gut health assistant"
+name: gutsynced
+description: "GutSynced — a SIBO-specific food categorization and gut health assistant"
 publish_to: 'none'
 version: 2.0.0+1
 
@@ -27,7 +27,7 @@ dependencies:
   google_fonts: ^6.2.1
 
   ## Icon
-  flutter_lucide: ^1.4.0
+  flutter_lucide: 1.4.0
 
   ## Navigation
   go_router: ^14.2.0
