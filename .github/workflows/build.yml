@@ -3,6 +3,7 @@ name: Build
 on:
   push:
     branches: [master]
+    tags: ["v*"]
   pull_request:
   workflow_dispatch:
 
@@ -177,3 +178,44 @@ jobs:
           name: gutsynced-linux-x64
           path: gutsynced-linux-x64.tar.gz
           if-no-files-found: error
+
+  release:
+    name: GitHub Release
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [android, ios, macos, windows, linux]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify tag matches pubspec version
+        run: |
+          version=$(sed -n 's/^version: \([0-9][^+]*\).*/\1/p' pubspec.yaml)
+          test "v$version" = "$GITHUB_REF_NAME" || {
+            echo "Tag $GITHUB_REF_NAME does not match pubspec version $version"
+            exit 1
+          }
+
+      - uses: actions/download-artifact@v4
+        with:
+          path: dist
+          merge-multiple: true
+
+      - name: Name release assets
+        run: |
+          version="${GITHUB_REF_NAME#v}"
+          mv dist/app-release.apk "dist/gutsynced-${version}-android.apk"
+          mv dist/gutsynced-ios-unsigned.zip "dist/gutsynced-${version}-ios-unsigned.zip"
+          mv dist/gutsynced-macos.zip "dist/gutsynced-${version}-macos.zip"
+          mv dist/gutsynced-windows.zip "dist/gutsynced-${version}-windows.zip"
+          mv dist/gutsynced-linux-x64.tar.gz "dist/gutsynced-${version}-linux-x64.tar.gz"
+
+      - name: Publish GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" dist/* \
+            --repo "$GITHUB_REPOSITORY" \
+            --title "GutSynced $GITHUB_REF_NAME" \
+            --generate-notes

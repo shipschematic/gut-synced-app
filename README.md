@@ -223,6 +223,30 @@ GitHub Actions builds every target on each push to `master`, pull request, or ma
 
 iOS and macOS artifacts are unsigned. Signing is required before device or store distribution.
 
+### Publishing a Release
+
+1. Bump `version:` in `pubspec.yaml`, for example `2.1.0+2`. The build number after `+` must increase for each store upload.
+2. Commit the version bump.
+3. Create and push a matching tag:
+
+```bash
+git tag v2.1.0
+git push origin master
+git push origin v2.1.0
+```
+
+The tag triggers all five builds. When they pass, the `release` job creates a GitHub Release named `GutSynced v2.1.0` with all artifacts attached. The tag must match the `pubspec.yaml` version or the job fails.
+
+Use a GitHub Release for direct downloads and internal testing. Store publishing needs signed builds:
+
+- **Google Play:** build an AAB signed with your upload key. The current APK uses the debug key, so it is not store-ready.
+- **Apple App Store:** requires an Apple Developer account, distribution certificate, provisioning profile, and a signed IPA via `flutter build ipa`.
+- **macOS outside the App Store:** requires Developer ID signing and notarization for Gatekeeper.
+- **Windows:** Authenticode signing is optional but avoids SmartScreen warnings.
+- **Linux:** distribute the tarball or package it as AppImage, Snap, or Flatpak.
+
+Add the signing secrets to GitHub Actions when the store accounts and certificates are ready.
+
 ### Key Dependencies
 
 | Package | Purpose |
