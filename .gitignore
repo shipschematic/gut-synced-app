@@ -44,3 +44,19 @@ app.*.map.json
 
 # Firebase CLI cache
 .firebase/
+
+# Secrets and signing material — never commit
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+android/key.properties
+android/app/google-services.json
+ios/Runner/GoogleService-Info.plist
+macos/Runner/GoogleService-Info.plist
+*service-account*.json
+*firebase-adminsdk*.json

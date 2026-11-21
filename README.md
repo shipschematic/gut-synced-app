@@ -1,7 +1,7 @@
 # GutSynced — SIBO & Gut Health Food Assistant
 
-[![GitHub](https://img.shields.io/badge/GitHub-shipblueprint%2Fgut--synced--app-blue)](https://github.com/shipblueprint/gut-synced-app)
-[![Build](https://github.com/shipblueprint/gut-synced-app/actions/workflows/build.yml/badge.svg)](https://github.com/shipblueprint/gut-synced-app/actions/workflows/build.yml)
+[![GitHub](https://img.shields.io/badge/GitHub-shipschematic%2Fgut--synced--app-blue)](https://github.com/shipschematic/gut-synced-app)
+[![Build](https://github.com/shipschematic/gut-synced-app/actions/workflows/build.yml/badge.svg)](https://github.com/shipschematic/gut-synced-app/actions/workflows/build.yml)
 
 A **Flutter** cross-platform application that helps people manage gut health conditions — **SIBO** (Small Intestinal Bacterial Overgrowth), **SSRD** (Starch- and Sucrose-Reduced Diet), **Bile Reflux**, and **6-Food Elimination / Low-Residue Diet** — by providing a comprehensive food database categorized as **allowed (green)**, **caution (yellow)**, or **avoid (red)** for each diet.
 
@@ -42,7 +42,7 @@ A **Flutter** cross-platform application that helps people manage gut health con
 
 ### Mobile (Android / iOS)
 
-1. Download the latest APK from the [Releases](https://github.com/shipblueprint/gut-synced-app/releases) page (Android).
+1. Download the latest APK from the [Releases](https://github.com/shipschematic/gut-synced-app/releases) page (Android).
 2. Or build from source (see [Development](#development) below).
 
 ### Desktop (Windows / macOS / Linux)
@@ -174,7 +174,7 @@ gutsynced/
 
 ```bash
 # Clone the repository
-git clone https://github.com/shipblueprint/gut-synced-app.git
+git clone https://github.com/shipschematic/gut-synced-app.git
 cd gut-synced-app
 
 # Install dependencies
@@ -304,7 +304,7 @@ The data structure includes food names, categories, status (green/yellow/red), a
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
-Feel free to check the [issues page](https://github.com/shipblueprint/gut-synced-app/issues).
+Feel free to check the [issues page](https://github.com/shipschematic/gut-synced-app/issues).
 
 Ways to contribute:
 
