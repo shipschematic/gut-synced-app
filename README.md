@@ -12,13 +12,9 @@ GutSynced is a Flutter app for checking foods against four gut-health diets: **S
 - Light and dark themes.
 - Runs on Android, iOS, web, Windows, macOS, and Linux.
 
-## Screenshots
+## Screenshot
 
-| Home | Food list |
-|---|---|
-| ![Home](assets/screenshots/home.png) | ![Food list](assets/screenshots/food-list.png) |
-| **Settings** | **Mobile** |
-| ![Settings](assets/screenshots/settings.png) | ![Mobile](assets/screenshots/mobile.png) |
+![GutSynced](assets/screenshots/app.png)
 
 ## Download
 
