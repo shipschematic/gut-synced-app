@@ -317,7 +317,7 @@ Ways to contribute:
 
 ## License
 
-[ISC](https://opensource.org/licenses/ISC) — see [LICENSE](LICENSE) (if applicable).
+[MIT](https://opensource.org/licenses/MIT) — see [LICENSE](LICENSE).
 
 ---
 
